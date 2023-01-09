@@ -17,7 +17,7 @@ For a given $\tau$, the PSR has multiple solutions: burning, extinguished, and a
 ## Requirements
 * Install Sunduals (https://github.com/LLNL/sundials.git)
 * Install Cantera (https://github.com/Cantera/cantera.git)
-* Path: /usr/local/lib /usr/local/include
+* Path: ```/usr/local/lib``` and ```/usr/local/include```
 ### Build the code 
 * Create and enter directory ```build```
 * type ```cmake ..```
