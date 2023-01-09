@@ -16,9 +16,10 @@ int main() {
 
     string mechName   = "gri30.yaml";
 
-    string xin = "CH4:1, O2:2, N2:7.52";
+    //string xin = "CH4:1, O2:2, N2:7.52";
     double Tin = 300;
-    double P   = 101325;
+    //double P   = 101325;
+    double P   = 1.0*OneAtm;
 
     int    nT   = 500;            // number of T values to solve for
 
@@ -40,7 +41,9 @@ int main() {
     vector<double> yin(nsp);
     double         hin;
 
-    gas->setState_TPX(Tin, P, xin);
+    //gas->setState_TPX(Tin, P, xin);
+    gas->setEquivalenceRatio(1.0,"CH4":1, "O2:0.21, N2:0.79");
+    gas->setState_TP(Tin, P);
     gas->getMassFractions(&yin[0]);
     hin = gas->enthalpy_mass();
 
