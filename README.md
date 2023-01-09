@@ -14,7 +14,10 @@ For a given $\tau$, the PSR has multiple solutions: burning, extinguished, and a
 
 <img src="tau_T.png" width="500">
 
-## Build the code 
+## Requirements
+* Install Sunduals (https://github.com/LLNL/sundials.git)
+* Install Cantera (https://github.com/Cantera/cantera.git)
+### Build the code 
 * Create and enter directory ```build```
 * type ```cmake ..```
 * type ```make``` or ```make -j8```
